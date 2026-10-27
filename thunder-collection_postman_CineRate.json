@@ -1,0 +1,96 @@
+{
+    "info": {
+        "_postman_id": "dbc22167-413e-42dc-9b0c-3ed8285a1ec5",
+        "name": "CineRate",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:8080/api/valoraciones",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/valoraciones",
+                    "path": [
+                        "api",
+                        "valoraciones"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/valoraciones/pelicula/1",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/valoraciones/pelicula/1",
+                    "path": [
+                        "api",
+                        "valoraciones",
+                        "pelicula",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/valoraciones",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8080/api/valoraciones",
+                    "path": [
+                        "api",
+                        "valoraciones"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n\"peliculaID\": 2,\r\n\"tipoVotante\": \"PERSONA\",\r\n\"positiva\": true\r\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/valoraciones/pelicula/1/resumen",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/valoraciones/pelicula/1/resumen",
+                    "path": [
+                        "api",
+                        "valoraciones",
+                        "pelicula",
+                        "1",
+                        "resumen"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        }
+    ]
+}
